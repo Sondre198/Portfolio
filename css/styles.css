@@ -1,0 +1,117 @@
+
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #5bb66c;
+}
+
+.list-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-main .heading {
+    color: white;
+    padding-top: 100px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.list-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.box-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.box-container__image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border: solid rgb(198, 198, 198) 1px;
+}
+
+.box-container__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-container__image:hover img {
+    transform: scale(1.1);
+}
+
+.box-container__content h3{
+    font-size: 20px;
+    
+}
+
+.box-container__content p{
+    height: 120px;
+    
+    font-size: 15px;
+
+    line-height: 2;
+    padding: 15px 0;
+}
+
+.box-container__button {
+    all: unset;
+    transition: all .2s linear;
+    background-color: white;
+    border-color: black;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid;
+
+    font-size: 16px;
+}
+
+.box-container__button:hover {
+    background-color: rgb(41, 182, 71);
+    border-color: rgb(41, 182, 71);
+    color: #fff;
+    border-radius: 10px;
+}
+
+#load-more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+}
+
+@media (max-width: 450px) {
+    .box-container {
+        height: 600px;
+    }
+}
